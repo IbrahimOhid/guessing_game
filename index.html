@@ -19,18 +19,19 @@
 
 <body>
     <div class="container text-center py-5">
+        <h2 class="bg-primary py-2 px-3 text-white mb-3"><span><i class="bi bi-trophy"></i> </span>Guessing
+            Game</h2>
         <div class="row">
             <div class="col-md-7">
                 <div id="main_div" class="ms-2">
-                    <h2 class="bg-primary py-2 px-3 text-white mb-3"><span><i class="bi bi-trophy"></i> </span>Guessing
-                        Game</h2>
+                   
                     <p class="fw-bold">
                         We have selected a random number
                         between 0 - 9. See if you can
                         guess it.
                     </p>
                     <form action="" class="col-md-12 mx-auto w-50">
-                        <input type="number" id="inputNum" class="input-group mb-3 text-center py-1"   min="0" max="9"
+                        <input type="number" name="number" id="inputNum" class="input-group mb-3 text-center py-1"   min="0" max="9"
                             placeholder="Type Digit Here 0 - 9">
                         <button id="guessBtn"
                             class="btn btn-primary fw-bold px-5 py-2 border-0 text-white text-uppercase">Guess
@@ -42,9 +43,11 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <h2 class="text-decoration-underline mb-5">Score</h2>
+                <div id="secondary_div">
+                    <h2 class="text-decoration-underline mb-5">Score</h2>
                 <h5>Correct Digit: <span id="correctNum" class="bg-success px-2 rounded-1 text-white">0</span> Wrong
-                    Digit: <span id="wrongNum" class="bg-danger px-2 rounded-1 text-white">0</span></h>
+                    Digit: <span id="wrongNum" class="bg-danger px-2 rounded-1 text-white">0</span></h5>
+                </div>
             </div>
         </div>
     </div>
